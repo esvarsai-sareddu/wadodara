@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Clean Responsive Landing</title>
+  <!-- Link to external stylesheet -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Header: logo + navigation -->
+  <header class="site-header" role="banner">
+    <div class="container header-inner">
+      <a class="logo" href="#" aria-label="Home">
+        <!-- Simple SVG logo -->
+        <svg width="36" height="36" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+          <defs>
+            <linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
+              <stop offset="0" stop-color="#6C5CE7"/>
+              <stop offset="1" stop-color="#00BFA6"/>
+            </linearGradient>
+          </defs>
+          <rect width="24" height="24" rx="5" fill="url(#g)"></rect>
+          <path d="M7 12h10" stroke="#fff" stroke-width="1.5" stroke-linecap="round"></path>
+          <path d="M12 7v10" stroke="#fff" stroke-width="1.5" stroke-linecap="round"></path>
+        </svg>
+        <span class="brand">Wadodara</span>
+      </a>
+
+      <!-- Nav toggle for small screens (CSS-only hamburger) -->
+      <input id="nav-toggle" class="nav-toggle" type="checkbox" aria-hidden="true" />
+      <label class="nav-toggle-label" for="nav-toggle" aria-hidden="true">
+        <span></span>
+      </label>
+
+      <nav class="site-nav" role="navigation" aria-label="Main Navigation">
+        <ul>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a class="cta" href="#get-started">Get Started</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero section: heading, paragraph, and CTA -->
+  <main>
+    <section class="hero" id="home" role="region" aria-label="Hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <h1>Design fast. Ship faster.</h1>
+          <p class="lead">
+            Wadodara helps you prototype, iterate, and deliver beautiful interfaces with speed.
+            Built with a responsive-first approach so your product looks great on any device.
+          </p>
+          <p class="hero-actions">
+            <a href="#get-started" class="btn-primary">Get Started — It's Free</a>
+            <a href="#features" class="btn-ghost">See Features</a>
+          </p>
+        </div>
+
+        <div class="hero-card" aria-hidden="true">
+          <!-- Decorative card to show layout capability (Grid) -->
+          <div class="card-top">
+            <div class="chip">New</div>
+            <div class="card-title">Landing Kit</div>
+          </div>
+          <div class="card-body">
+            <div class="stat">
+              <div class="num">24x</div>
+              <div class="label">Faster prototyping</div>
+            </div>
+            <div class="stat">
+              <div class="num">+120</div>
+              <div class="label">Components</div>
+            </div>
+          </div>
+          <div class="card-footer">
+            <a class="card-link" href="#pricing">Explore plans</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Optional small features grid -->
+    <section class="features" id="features" role="region" aria-label="Features">
+      <div class="container">
+        <h2 class="section-title">Everything you need to launch</h2>
+        <div class="features-grid">
+          <article class="feature">
+            <h3>Responsive-first</h3>
+            <p>Built with modern layout primitives. Your pages adapt beautifully to any screen.</p>
+          </article>
+          <article class="feature">
+            <h3>Customizable</h3>
+            <p>Design tokens via CSS variables make theming quick and consistent across pages.</p>
+          </article>
+          <article class="feature">
+            <h3>Performance</h3>
+            <p>Lightweight markup and minimal external resources mean fast load times.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer: social media links -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container footer-inner">
+      <p class="copyright">© 2025 Wadodara — All rights reserved.</p>
+      <ul class="social" aria-label="Social links">
+        <li><a href="#" aria-label="Twitter">
+          <!-- Inline Twitter icon SVG -->
+          <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M22 5.92c-.66.29-1.37.49-2.12.58.76-.46 1.34-1.19 1.61-2.06-.71.42-1.5.72-2.34.88A3.57 3.57 0 0016.5 4c-1.98 0-3.58 1.6-3.58 3.58 0 .28.03.55.09.81-2.98-.15-5.62-1.58-7.39-3.75-.31.53-.48 1.15-.48 1.81 0 1.25.64 2.36 1.62 3.01-.6-.02-1.17-.18-1.67-.46v.05c0 1.73 1.23 3.17 2.87 3.5-.3.08-.62.12-.95.12-.23 0-.45-.02-.67-.06.45 1.4 1.78 2.42 3.35 2.45A7.16 7.16 0 013 18.54 10.1 10.1 0 009.86 20c6.02 0 9.32-4.99 9.32-9.32v-.42c.64-.46 1.19-1.04 1.63-1.7-.59.26-1.22.44-1.88.52z"/></svg>
+        </a></li>
+
+        <li><a href="#" aria-label="Instagram">
+          <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M7 2h10a5 5 0 015 5v10a5 5 0 01-5 5H7a5 5 0 01-5-5V7a5 5 0 015-5zm5 6.8A4.2 4.2 0 1016.2 13 4.2 4.2 0 0012 8.8zm6.4-3.8a1.2 1.2 0 11-1.2-1.2 1.2 1.2 0 011.2 1.2z"/></svg>
+        </a></li>
+
+        <li><a href="#" aria-label="LinkedIn">
+          <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M20 3H4a1 1 0 00-1 1v16a1 1 0 001 1h16a1 1 0 001-1V4a1 1 0 00-1-1zM8.34 18H6.1V10.5h2.24V18zM7.22 9.38a1.3 1.3 0 110-2.6 1.3 1.3 0 010 2.6zM18 18h-2.24v-3.9c0-.93-.02-2.13-1.3-2.13-1.3 0-1.5 1.02-1.5 2.06V18H10.1V10.5h2.14v1h.03c.3-.56 1.04-1.15 2.15-1.15C17.12 10.35 18 12.02 18 14.6V18z"/></svg>
+        </a></li>
+      </ul>
+    </div>
+  </footer>
+</body>
+</html>
